@@ -1,19 +1,58 @@
 {
-  "name": "uron",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "akos",
+  "description": "Akos",
+  "version": "0.1.0",
+  "author": "Rainfore <rainforest92@126.com>",
+  "contributors": [
+    "hzlinguanfu <770511401@qq.com>"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "akos": "bin/akos",
+    "akos-init": "bin/akos-init",
+    "akos-start": "bin/akos-start",
+    "akos-dev": "bin/akos-dev"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "bash node_modules/vusion-hooks/pre-commit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vusion/uron.git"
-  },
-  "author": "",
-  "license": "ISC",
+  "repository": "vusion/akos",
+  "homepage": "http://vusion.github.io",
   "bugs": {
-    "url": "https://github.com/vusion/uron/issues"
+    "url": "http://github.com/vusion/akos/issues"
   },
-  "homepage": "https://github.com/vusion/uron#readme"
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "koa",
+    "cli",
+    "fullstack"
+  ],
+  "tags": [
+    "vue",
+    "koa",
+    "cli",
+    "fullstack"
+  ],
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "debug": "^3.1.0",
+    "koa-webpack-dev-middleware": "^1.4.6",
+    "koa-webpack-hot-middleware": "^1.0.3",
+    "opn": "^5.3.0",
+    "semver": "^5.5.0",
+    "shelljs": "^0.8.2",
+    "vusion-cli": "~0.7.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-vusion": "^2.1.1",
+    "husky": "^0.13.3",
+    "vusion-hooks": "^0.1.0"
+  }
 }
